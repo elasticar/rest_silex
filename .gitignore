@@ -1,0 +1,10 @@
+/vendor/
+/docs/
+/var/cache/*
+/var/logs/*
+README.rst
+testing.php
+testing_2.php
+/config/prod.php
+.idea/
+/bin/
