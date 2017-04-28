@@ -1,0 +1,9 @@
+<?php
+
+
+$param_driver    = 'pdo_mysql';
+$param_host      = '';
+$param_dbname    = 'elasticar';
+$param_user     = '';
+$param_password  = '';
+$param_charset   = 'utf8mb4';

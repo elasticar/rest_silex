@@ -5,6 +5,6 @@
 README.rst
 testing.php
 testing_2.php
-/config/prod.php
+/config/parameters.php
 .idea/
 /bin/

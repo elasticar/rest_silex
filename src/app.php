@@ -12,7 +12,14 @@ $app->register(new AssetServiceProvider());
 $app->register(new TwigServiceProvider());
 $app->register(new HttpFragmentServiceProvider());
 
-$app->register(new Silex\Provider\DoctrineServiceProvider(), $app['db.options']);
+$app->register(new Silex\Provider\DoctrineServiceProvider(), array('db.options' => array(
+    'driver'    => $param_driver,
+    'host' => $param_host,
+    'dbname'    => $param_dbname,
+    'user'     => $param_user,
+    'password'  => $param_password,
+    'charset'   => $param_charset,
+)));
 
 $app['twig'] = $app->extend('twig', function ($twig, $app) {
     // add custom globals, filters, tags, ...

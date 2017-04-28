@@ -18,6 +18,8 @@ require_once __DIR__.'/../vendor/autoload.php';
 
 Debug::enable();
 
+require_once __DIR__.'/../config/parameters.php';
+
 $app = require __DIR__.'/../src/app.php';
 require __DIR__.'/../config/dev.php';
 require __DIR__.'/../src/controllers.php';
